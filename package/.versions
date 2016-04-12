@@ -43,7 +43,7 @@ iron:router@1.0.7
 iron:url@1.0.7
 jquery@1.11.7
 less@2.5.7
-local-test:rcdelfin:chat-bubbles@0.4.4
+local-test:rcdelfin:chat-bubbles@0.4.5
 localstorage@1.0.8
 logging@1.0.11
 meteor@1.1.13
@@ -66,7 +66,7 @@ ordered-dict@1.0.6
 promise@0.6.6
 random@1.0.8
 rate-limit@1.0.3
-rcdelfin:chat-bubbles@0.4.4
+rcdelfin:chat-bubbles@0.4.5
 reactive-dict@1.1.6
 reactive-var@1.0.8
 retry@1.0.6
