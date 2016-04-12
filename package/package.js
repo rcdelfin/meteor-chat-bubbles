@@ -1,14 +1,14 @@
 Package.describe({
-  name: 'kristerv:chat-bubbles',
-  version: '0.4.3',
+  name: 'rcdelfin:chat-bubbles',
+  version: '0.4.4',
   summary: 'Chat with your potential customer',
-  git: 'https://github.com/KristerV/meteor-chat-bubbles',
+  git: 'https://github.com/rcdelfin/meteor-chat-bubbles',
   documentation: 'README.md'
 })
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2')
-  api.use(["templating", "mquandalle:jade@0.4.3", "less"], "client");
+  api.use(["templating", "mquandalle:jade@0.4.3", "less@2.5.7"], "client");
   api.use('iron:router@1.0.5')
   api.use('artwells:accounts-guest@0.1.5')
   api.use('alanning:roles@1.2.13')

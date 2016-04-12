@@ -1,3 +1,9 @@
+This package is based on packages [kristerv:chat-bubbles](https://atmospherejs.com/kristerv/chat-bubbles).
+
+Upgrades for Less & Meteor.
+
+The package is compatible with Meteor 1.3.1.
+
 [DEMO](http://chat-bubbles.meteor.com)
 
 ChatBubbles is a [Meteor.js](http://meteor.com) chat app that enables you to talk to your potential customers. Basically you can have a **chat bubble for the guests** on the front page:
@@ -55,13 +61,13 @@ Here are all the non-CSS customization options
 
 ## Styling
 
-To **modify elements** just override the CSS. 
+To **modify elements** just override the CSS.
 
-To **remove all styling** from the chat use 
+To **remove all styling** from the chat use
 
-    {{> chatBubbles style="unstyled"}} 
+    {{> chatBubbles style="unstyled"}}
 
-or 
+or
 
     this.render('chatBubbles', {data: {style: "unstyled"}});
 
