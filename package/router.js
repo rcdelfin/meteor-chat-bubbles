@@ -21,6 +21,10 @@ Router.configure({
 			return Meteor.subscribe('chatBubbles', Meteor.userId())
 	},
 	onAfterAction: function () {
+		if (!this.userId) {
+			return false;
+		}
+		
 		var admin = Roles.userIsInRole(Meteor.userId(), 'admin')
 		if (!Meteor.user() || admin)
 			return false
@@ -33,8 +37,8 @@ Router.configure({
 			var guest = user.profile.guest
 			if (!admin && guest) {
 				ChatBubblesCollection.insert({
-					authorId: Meteor.userId(), 
-					messages: [], 
+					authorId: Meteor.userId(),
+					messages: [],
 					createdAt: new Date()
 				})
 			}

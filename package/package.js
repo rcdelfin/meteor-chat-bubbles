@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rcdelfin:chat-bubbles',
-  version: '0.4.4',
+  version: '0.4.5',
   summary: 'Chat with your potential customer',
   git: 'https://github.com/rcdelfin/meteor-chat-bubbles',
   documentation: 'README.md'
