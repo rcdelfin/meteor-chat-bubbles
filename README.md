@@ -1,7 +1,5 @@
 This package is based on packages [kristerv:chat-bubbles](https://atmospherejs.com/kristerv/chat-bubbles).
 
-Upgrades for Less & Meteor.
-
 The package is compatible with Meteor 1.3.1.
 
 [DEMO](http://chat-bubbles.meteor.com)
@@ -16,7 +14,7 @@ and an **admin view** with client status shown and notifications.
 
 ## Installing
 
-    meteor add kristerv:chat-bubbles
+    meteor add rcdelfin:chat-bubbles
 
 ## Using
 

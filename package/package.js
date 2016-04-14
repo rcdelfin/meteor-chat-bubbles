@@ -1,14 +1,15 @@
 Package.describe({
   name: 'rcdelfin:chat-bubbles',
-  version: '0.4.5',
-  summary: 'Chat with your potential customer',
+  version: '0.4.6',
+  summary: 'Chat with your potential customer for Meteor 1.3.1',
   git: 'https://github.com/rcdelfin/meteor-chat-bubbles',
   documentation: 'README.md'
 })
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2')
-  api.use(["templating", "mquandalle:jade@0.4.3", "less@2.5.7"], "client");
+  api.versionsFrom('1.3.1')
+  api.use('ecmascript')
+  api.use(["templating", "mquandalle:jade@0.4.3", "less"], "client");
   api.use('iron:router@1.0.5')
   api.use('artwells:accounts-guest@0.1.5')
   api.use('alanning:roles@1.2.13')
@@ -25,6 +26,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest')
+  api.use('ecmascript')
   api.use('rcdelfin:chat-bubbles')
   api.addFiles('chat-bubble-tests.js')
 })
